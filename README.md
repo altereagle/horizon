@@ -1,4 +1,8 @@
-horizon
+Horizon
 =======
 
-Max &amp; Kendell's sweet game
+Max &amp; Kendell's MMO
+--
+
+
+Test
