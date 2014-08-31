@@ -1,5 +1,5 @@
 // Main game file
-window.onload = function() {
+define(["crafty"], function(Crafty) {
 	Crafty.init();
 
   // ! - Make a new sprite, that is cooler
@@ -9,7 +9,7 @@ window.onload = function() {
 		stone: [1,0,1,1]
 	});
 
-	iso = Crafty.isometric.size(128);
+	var iso = Crafty.isometric.size(128);
 	var z = 0;
   
 	for(var i = 20; i >= 0; i--) {
@@ -18,19 +18,25 @@ window.onload = function() {
 			var tile = Crafty.e("2D, DOM, "+ (!which ? "grass" : "stone") +", Mouse")
 			.attr('z',i+1 * y+1)
       .areaMap([64,0],[128,32],[128,96],[64,128],[0,96],[0,32])
+      
+      // @ - Click event anywhere on the map
       .bind("Click", function(e) {
-				//destroy on right click
-        //right click seems not work in Mac OS
-        //delete it
-        console.log(e.button);
-				/*if(e.button === 2)*/ this.destroy();
-			}).bind("MouseOver", function() {
+        console.log(e, this);
+        
+        // this.destroy();
+			})
+      
+      // @ - Mouse over event anywhere on the map
+      .bind("MouseOver", function() {
 				if(this.has("grass")) {
 					this.sprite(0,1,1,1);
 				} else {
 					this.sprite(1,1,1,1);
 				}
-			}).bind("MouseOut", function() {
+			})
+      
+      // @ - Mouse out event anywhere on the map
+      .bind("MouseOut", function() {
 				if(this.has("grass")) {
 					this.sprite(0,0,1,1);
 				} else {
@@ -59,4 +65,4 @@ window.onload = function() {
 			Crafty.removeEvent(this, Crafty.stage.elem, "mousemove", scroll);
 		});
 	});
-};
+});
