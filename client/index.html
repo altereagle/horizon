@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Add require js -->
-  <script data-main="scripts/settings" src="scripts/require.js"></script>
+  <script src="scripts/socket.io.js"></script>
+  <script src="/bone.io/bone.io.js"></script>
+  <script>
+    socket = io.connect();
+    bone.set('io.option', {
+      socket: socket
+    });
+  </script>
+  <script data-main="settings" src="dependencies/require.js"></script>
 	<title>Game</title>
 	<style>
 	body, html { margin:0; padding: 0; overflow:hidden background: rgba(0, 0, 0, 1)}

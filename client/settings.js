@@ -3,8 +3,8 @@ requirejs.config({
   "paths" : {
     
     // @ - Dependencies
-    "crafty" : "../dependencies/crafty"
-    
+    "crafty" : "dependencies/crafty",
+    "game"   : "scripts/game"
   }
 });
 

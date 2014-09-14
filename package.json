@@ -26,6 +26,8 @@
   },
   "dependencies": {
     "colors": "*",
-    "express": "*"
+    "express": "*",
+    "socket.io": "*",
+    "bone.io": "*"
   }
 }
