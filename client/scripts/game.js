@@ -1,9 +1,20 @@
 // Main game file
-define(["crafty"], function(Crafty) {
-	Crafty.init();
-
-  // ! - Make a new sprite, that is cooler
-  // ! - Put the sprite in assets/images/sprites/imagename.png
+define(["crafty", "bone", "components/frontPage"], function(Crafty, bone, frontPage) {
+	// TODO: Add a bone view
+  bone.view.titleScreen = bone.view('#cr-stage', {
+    events: {
+      'click': 'myFunction'
+    },
+    myFunction: function(){
+      console.log('body was clicked')
+    }
+  });
+  
+  // TODO: Make a new sprite, that is cooler
+  // TODO: Put the sprite in assets/images/sprites/imagename.png
+  
+  Crafty.init();
+  
 	Crafty.sprite(128, "images/sprite.png", {
 		grass: [0,0,1,1],
 		stone: [1,0,1,1]

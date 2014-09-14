@@ -4,7 +4,9 @@ requirejs.config({
     
     // @ - Dependencies
     "crafty" : "dependencies/crafty",
-    "game"   : "scripts/game"
+    "game"   : "scripts/game",
+    "bone"   : "dependencies/bone.io",
+    "$"      : "dependencies/jquery"
   }
 });
 

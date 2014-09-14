@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>  
+  <!-- Game dependencies -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="scripts/socket.io.js"></script>
   <script src="/bone.io/bone.io.js"></script>
   <script>
@@ -9,11 +11,14 @@
       socket: socket
     });
   </script>
+  
+  <!-- Start game -->
   <script data-main="settings" src="dependencies/require.js"></script>
-	<title>Game</title>
-	<style>
-	body, html { margin:0; padding: 0; overflow:hidden background: rgba(0, 0, 0, 1)}
-	</style>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+  <title>Game</title>
+  
 </head>
 <body>
 </body>
