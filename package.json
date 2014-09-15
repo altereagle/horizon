@@ -1,0 +1,33 @@
+{
+  "name": "horizon",
+  "version": "0.0.0",
+  "description": "Horizon is a javascript mmo game.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/altereagle/horizon.git"
+  },
+  "keywords": [
+    "game",
+    "horizon",
+    "mmo",
+    "javascript"
+  ],
+  "author": "Max & Kendell",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "4a7d8914a4b4d4949abd35489c2ec9b3781963de",
+  "bugs": {
+    "url": "https://github.com/altereagle/horizon/issues"
+  },
+  "dependencies": {
+    "colors": "*",
+    "express": "*",
+    "socket.io": "*",
+    "bone.io": "*"
+  }
+}

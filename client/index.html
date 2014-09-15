@@ -1,4 +1,25 @@
-<!-- Master branch -->
-
-<head></head>
-<body>Horizon<body>
+<!DOCTYPE html>
+<html>
+<head>  
+  <!-- Game dependencies -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="scripts/socket.io.js"></script>
+  <script src="/bone.io/bone.io.js"></script>
+  <script>
+    socket = io.connect();
+    bone.set('io.option', {
+      socket: socket
+    });
+  </script>
+  
+  <!-- Start game -->
+  <script data-main="settings" src="dependencies/require.js"></script>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+  <title>Game</title>
+  
+</head>
+<body>
+</body>
+</html>
