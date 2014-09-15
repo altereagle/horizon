@@ -7,7 +7,7 @@ define(["bone", "$"], function(bone, $){
   frontPage.attr("id", "frontPage");
   
   // @ - Add the front page element container to the body element
-  frontPage.appendto( $("body") );
+  frontPage.appendTo( $("body") );
   
   // @ - Create a bone view for user interactivity with the element
   bone.view("#frontPage", {
