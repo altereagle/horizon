@@ -1,14 +1,17 @@
 // @ - Configure the game
 requirejs.config({
+  // @ - File paths
   "paths" : {
     
     // @ - Dependencies
     "crafty" : "dependencies/crafty",
-    "game"   : "scripts/game",
     "bone"   : "dependencies/bone.io",
-    "$"      : "dependencies/jquery"
+    "$"      : "dependencies/jquery",
+    
+    // @ - Main game file
+    "game"   : "scripts/game"
   }
 });
 
-// @ - Start the game
+// @ - Start the game by requring the main game file
 requirejs(["game"]);

@@ -12,6 +12,7 @@ define(["crafty", "bone", "components/frontPage"], function(Crafty, bone, frontP
   
   // TODO: Make a new sprite, that is cooler
   // TODO: Put the sprite in assets/images/sprites/imagename.png
+  // TODO: Move Crafty features into modules that return only what is needed
   
   Crafty.init();
   
