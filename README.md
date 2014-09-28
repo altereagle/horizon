@@ -3,6 +3,5 @@ Horizon
 
 Max &amp; Kendell's MMO
 --
-
-
-Test
+TODO:
+  - Add splash screen
