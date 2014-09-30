@@ -1,0 +1,31 @@
+/* Front page styles */
+#frontPage {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color:  rgb(0, 0, 0);
+}
+
+
+#menu {
+  /* Positions, locations */
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #0ff;  
+  padding: 200px;
+  border-radius: 15px 0px 15px 0px;
+  height: 100%;
+  /* Fonts, colors */
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 25px;
+  /* Effects, p-zaz */
+}
+
+.option {
+  /*border: 1px solid #0ff; */
+}

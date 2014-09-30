@@ -17,11 +17,24 @@ define(["Game"], function(Game){
   var splashImage;
   
   // ! - TODO: Create a container for menu options
-  var menu;
+  var menu = $("<div></div>")
+    .attr("id", "menu")
+    .appendTo(frontPage);
   
-  // ! - TODO: Create menu option constructor
-  function MenuOption(){}
+    // ! - TODO: Create menu option constructor
+  function MenuOption(option){
+    option = option || {};
+    var menuOption = $("<div></div>")
+      .addClass("option")
+      .html(option.text || "menuOption")
+      .appendTo(menu);
+  }
   
+  // @ - New game option
+  var newGame = new MenuOption({
+    text: "Start Game"
+  });
+    
   // ! - TODO: Add menu options
   
   // @ - Create a bone view for user interactivity with the element
