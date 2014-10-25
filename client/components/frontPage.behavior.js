@@ -11,10 +11,12 @@ define(["Game"], function(Game){
     // @ - Start the game
     startGame: function(){
       //  - Hide the front page
-      $("#frontPage").hide();
+      $("#frontPage").fadeOut(function(){
+
+        // @ - Load the character select screen
+        $("#characters").fadeIn();  
+      });
       
-      // @ - Load the character select screen
-      $("#characters").show();
       
     },
     quitGame: function(){
