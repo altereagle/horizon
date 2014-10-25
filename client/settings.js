@@ -11,10 +11,18 @@ requirejs.config({
     
     // @ - Main game file
     "game"      : "scripts/game",
-    "frontPage" : "components/frontPage",
-    "Game"      : "components/Game"
+    
+    // @ - Game utility
+    "Game"      : "components/Game",
+    
+    // @ - Game entities
+    "entities"  : "entities/index",
+    
+    // @ - Entity generator
+    "generator" : "generator/index"
+
   }
 });
 
 // @ - Start the game by requring the main game file
-requirejs(["frontPage"]);
+requirejs(["main"]);

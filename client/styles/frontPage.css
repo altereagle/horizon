@@ -8,24 +8,39 @@
   justify-content: center;
   color:  rgb(0, 0, 0);
 }
+  #frontPage #menu, #frontPage #title {
+    cursor: pointer;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5), 0px 10px 5px rgba(0, 0, 0, 0.25);
+    
+    transition: all 0.15s ease-out;
+    
+    width: 100%;
+  }
 
+  /* Front page menu */
+  #frontPage #menu {
+    flex: 1 1 100%;
+    font-size: 55px;
+  }
+    /* Front page menu option */
+    #frontPage #menu .option {
+      padding: 20px;
+      transition: all 0.15s ease-out;
+    }
+      #frontPage #menu .option:hover {
+        color: #f00;
+        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5), 0px 2px 5px rgba(0, 0, 0, 0.25);
+      }
 
-#menu {
-  /* Positions, locations */
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid #0ff;  
-  padding: 200px;
-  border-radius: 15px 0px 15px 0px;
-  height: 100%;
-  /* Fonts, colors */
-  font-family: 'UnifrakturMaguntia', cursive;
-  font-size: 25px;
-  /* Effects, p-zaz */
-}
-
-.option {
-  /*border: 1px solid #0ff; */
-}
+  /* Front page title */
+  #frontPage #title {
+    padding-top: 50px;
+    flex: 1 1 200px;
+    font-size: 125px;
+    color: #f00;
+  }
