@@ -3,6 +3,11 @@ define(["Game"], function(Game){
   var $    = Game.$;
   
   return bone.view("#characters", {
-    events: {}
+    events: {
+      'click #choose': 'chooseCharacter',
+      chooseCaracter: function(){
+        console.log('choose caracter')
+      }
+    }
   });
 });
